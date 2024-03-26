@@ -1,5 +1,49 @@
+local function ShowNotification(title, message, duration)
+    local gui = Instance.new("ScreenGui")
+    gui.Name = "NotificationGui"
+    gui.Parent = game.CoreGui
+
+    local frame = Instance.new("Frame")
+    frame.Size = UDim2.new(0.3, 0, 0.15, 0) -- Adjusted height to be a bit taller
+    frame.Position = UDim2.new(0.5, 0, 0.8, 0)
+    frame.AnchorPoint = Vector2.new(0.5, 0.5)
+    frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36) -- Black background
+    frame.BorderColor3 = Color3.fromRGB(169, 169, 169) -- Gray outline
+    frame.BorderSizePixel = 1
+    frame.Parent = gui
+
+    local corner = Instance.new("UICorner") -- Create a UICorner instance
+    corner.CornerRadius = UDim.new(0, 10) -- Set the corner radius
+    corner.Parent = frame -- Attach it to the frame
+
+    local titleLabel = Instance.new("TextLabel")
+    titleLabel.Size = UDim2.new(1, 0, 0.5, 0)
+    titleLabel.Position = UDim2.new(0, 0, 0, 0)
+    titleLabel.BackgroundTransparency = 1
+    titleLabel.Text = title
+    titleLabel.Font = Enum.Font.GothamBold
+    titleLabel.TextSize = 16
+    titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text
+    titleLabel.Parent = frame
+
+    local messageLabel = Instance.new("TextLabel")
+    messageLabel.Size = UDim2.new(1, 0, 0.5, 0)
+    messageLabel.Position = UDim2.new(0, 0, 0.5, 0)
+    messageLabel.BackgroundTransparency = 1
+    messageLabel.Text = message
+    messageLabel.Font = Enum.Font.GothamBold
+    messageLabel.TextSize = 14
+    messageLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text
+    messageLabel.Parent = frame
+
+    wait(duration)
+
+    gui:Destroy()
+end
+
 if game.PlaceId == 3101667897 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Scripts.lua/main/Legends%20of%20Speed.lua'),true))()
 else
-    print("game not found")
+ShowNotification("Uh oh!", "Game not found!", 5)
+    print("Game not found")
 end
