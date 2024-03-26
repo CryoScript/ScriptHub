@@ -1,0 +1,4 @@
+if game.PlaceId == 3101667897 then
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Scripts.lua/main/Legends%20of%20Speed.lua'),true))()
+elseif
+print("game not found")
