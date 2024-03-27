@@ -43,7 +43,7 @@ end
 
 if game.PlaceId == 3276265788 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Scripts.lua/main/Legends%20of%20Speed.lua%20V.16'),true))()
-elseif
+else
 if game.PlaceId == 3101667897 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Scripts.lua/main/Legends%20of%20Speed.lua%20V.16'),true))()
 elseif game.PlaceId == 205224386 then
