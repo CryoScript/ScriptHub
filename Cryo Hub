@@ -42,7 +42,10 @@ local function ShowNotification(title, message, duration)
 end
 
 if game.PlaceId == 3101667897 then
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Scripts.lua/main/Legends%20of%20Speed.lua'),true))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Scripts.lua/main/Legends%20of%20Speed.lua%20V.16'),true))()
+else
+if game.PlaceId == 205224386 then
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Scripts.lua/main/Hide%20%26%20Seek%20Extreme.lua%20V.1'),true))()
 else
 print("Game not found")
 ShowNotification("Uh oh!", "Game not found!", 5)
