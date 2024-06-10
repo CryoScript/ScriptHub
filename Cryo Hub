@@ -1,45 +1,4 @@
-local function ShowNotification(title, message, duration)
-    local gui = Instance.new("ScreenGui")
-    gui.Name = "NotificationGui"
-    gui.Parent = game.CoreGui
-
-    local frame = Instance.new("Frame")
-    frame.Size = UDim2.new(0.3, 0, 0.15, 0)
-    frame.Position = UDim2.new(0.5, 0, 0.8, 0)
-    frame.AnchorPoint = Vector2.new(0.5, 0.5)
-    frame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-    frame.BorderColor3 = Color3.fromRGB(169, 169, 169)
-    frame.BorderSizePixel = 1
-    frame.Parent = gui
-
-    local corner = Instance.new("UICorner")
-    corner.CornerRadius = UDim.new(0, 10)
-    corner.Parent = frame -- Attach it to the frame
-
-    local titleLabel = Instance.new("TextLabel")
-    titleLabel.Size = UDim2.new(1, 0, 0.5, 0)
-    titleLabel.Position = UDim2.new(0, 0, 0, 0)
-    titleLabel.BackgroundTransparency = 1
-    titleLabel.Text = title
-    titleLabel.Font = Enum.Font.GothamBold
-    titleLabel.TextSize = 16
-    titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    titleLabel.Parent = frame
-
-    local messageLabel = Instance.new("TextLabel")
-    messageLabel.Size = UDim2.new(1, 0, 0.5, 0)
-    messageLabel.Position = UDim2.new(0, 0, 0.5, 0)
-    messageLabel.BackgroundTransparency = 1
-    messageLabel.Text = message
-    messageLabel.Font = Enum.Font.GothamBold
-    messageLabel.TextSize = 14
-    messageLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    messageLabel.Parent = frame
-
-    wait(duration)
-
-    gui:Destroy()
-end
+local NotificationModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/CryoScript/CryoHublib/main/Notification"))()
 
 if game.PlaceId == 3276265788 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Scripts.lua/main/Legends%20of%20Speed.lua'),true))() -- Legends of speed
@@ -52,6 +11,5 @@ elseif game.PlaceId == 205224386 then
 elseif game.PlaceId ==  3623096087 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Scripts.lua/main/Muscle%20Legends.lua'),true))() -- Muscle Legends
 else
-    print("Game not found")
-    ShowNotification("Uh oh!", "Game not found!", 5)
+NotificationModule.ShowNotification("Uh Oh!", "Game Not Found!", 5)
 end
