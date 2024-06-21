@@ -11,5 +11,5 @@ elseif game.PlaceId == 205224386 then
 elseif game.PlaceId ==  3623096087 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/ScriptHub/main/Muscle%20Legends.lua'),true))() -- Muscle Legends
 else
-    NotificationModule.ShowNotification("Uh Oh!", "Game Not Supported!", 7)
+    NotificationModule.ShowNotification("Uh Oh!", "Game Not Supported Yet!", 7)
 end
