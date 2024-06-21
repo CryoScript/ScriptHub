@@ -1,5 +1,5 @@
-local NotificationModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/CryoScript/CryoHublib/main/Notification"))()
-
+local NotificationModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/CryoScript/CryoHublib/main/Notification"))() -- booting notifications
+-- script holder:
 if game.PlaceId == 3276265788 then
     loadstring(game:HttpGet(('___'),true))() -- Legends of speed
 elseif game.PlaceId == 3101667897 then
