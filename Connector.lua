@@ -7,7 +7,7 @@ elseif game.PlaceId == 3101667897 then
 elseif game.PlaceId == 3232996272 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/ScriptHub/main/Legends%20of%20Speed.lua'),true))() -- Legends of speed
 elseif game.PlaceId == 205224386 then
-    loadstring(game:HttpGet(('___'),true))() -- Hide and Seek
+    loadstring(game:HttpGet(('___'),true))() -- Hide & Seek Extreme
 elseif game.PlaceId ==  3623096087 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/ScriptHub/main/Muscle%20Legends.lua'),true))() -- Muscle Legends
 else
