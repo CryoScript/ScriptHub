@@ -13,5 +13,5 @@ elseif game.PlaceId ==  3623096087 then
     elseif game.PlaceId ==  13674495546 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/ScriptHub/main/Lights%20Out.lua'),true))() -- Lights Out Chapter 1
 else
-    NotificationModule.ShowNotification("Uh Oh!", "Game Not Supported Yet!", 7)
+    loadstring(game:HttpGet(('___________'),true))()
 end
