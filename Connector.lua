@@ -10,8 +10,8 @@ elseif game.PlaceId == 205224386 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/ScriptHub/main/Hide%20%26%20Seek%20Extreme.lua'),true))() -- Hide & Seek Extreme
 elseif game.PlaceId ==  3623096087 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/ScriptHub/main/Muscle%20Legends.lua'),true))() -- Muscle Legends
-    elseif game.PlaceId ==  4746533355 then
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/ScriptHub/main/Lights%20Out.lua'),true))() -- Lights Out
+    elseif game.PlaceId ==  13674495546 then
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/ScriptHub/main/Lights%20Out.lua'),true))() -- Lights Out Chapter 1
 else
     NotificationModule.ShowNotification("Uh Oh!", "Game Not Supported Yet!", 7)
 end
