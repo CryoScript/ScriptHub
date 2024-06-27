@@ -13,5 +13,5 @@ elseif game.PlaceId ==  3623096087 then
     elseif game.PlaceId ==  13674495546 then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/ScriptHub/main/Lights%20Out.lua'),true))() -- Lights Out Chapter 1
 else
-    loadstring(game:HttpGet(('___________'),true))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Cryo-Hub-Resources/main/Game%20Not%20Supported.lua'),true))()
 end
